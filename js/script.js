@@ -1,71 +1,37 @@
-var current_fs, next_fs, previous_fs;
-var left, opacity, scale;
-var animating;
-$(".next").click(function () {
-  if (animating) return false;
-  animating = true;
+  
+var page1 = document.getElementById("page1");
+var page2 = document.getElementById("page2");
+var page3 = document.getElementById("page3");
 
-  current_fs = $(this).parent();
-  next_fs = $(this).parent().next();
-  $("#progressbar li").eq($("fieldset").index(next_fs)).addClass("active");
-  next_fs.show();
-  current_fs.animate(
-    { opacity: 0 },
-    {
-      step: function (now, mx) {
-        scale = 1 - (1 - now) * 0.2;
-        left = now * 50 + "%";
-        opacity = 1 - now;
-        current_fs.css({
-          transform: "scale(" + scale + ")",
-          position: "absolute"
-        });
-        next_fs.css({ left: left, opacity: opacity });
-      },
-      duration: 800,
-      complete: function () {
-        current_fs.hide();
-        animating = false;
-      },
-      easing: "easeInOutBack"
-    }
-  );
-});
+var next1 = document.getElementById("next1");
+var next2 = document.getElementById("next2");
+var prev1 = document.getElementById("prev1");
+var prev2 = document.getElementById("prev2");
 
-$(".previous").click(function () {
-  if (animating) return false;
-  animating = true;
+var progress = document.getElementById("progress");
 
-  current_fs = $(this).parent();
-  previous_fs = $(this).parent().prev();
-  $("#progressbar li")
-    .eq($("fieldset").index(current_fs))
-    .removeClass("active");
 
-  previous_fs.show();
-  current_fs.animate(
-    { opacity: 0 },
-    {
-      step: function (now, mx) {
-        scale = 0.8 + (1 - now) * 0.2;
-        left = (1 - now) * 50 + "%";
-        opacity = 1 - now;
-        current_fs.css({ left: left });
-        previous_fs.css({
-          transform: "scale(" + scale + ")",
-          opacity: opacity
-        });
-      },
-      duration: 800,
-      complete: function () {
-        current_fs.hide();
-        animating = false;
-      },
-      easing: "easeInOutBack"
-    }
-  );
-});
+next1.onclick = function(){
+  page1.style.left="-450px";
+  page2.style.left="40px";
+  progress.style.width="240px";
+}
 
-$(".submit").click(function () {
-  return false;
-});
+prev1.onclick = function(){
+  page1.style.left="40px";
+  page2.style.left="450px";
+  progress.style.width="120px";
+}
+
+next2.onclick = function(){
+  page2.style.left="-450px";
+  page3.style.left="40px";
+  progress.style.width="360px";
+
+}
+
+prev2.onclick = function(){
+  page2.style.left="40px";
+  page3.style.left="450px";
+  progress.style.width = "240px";
+}

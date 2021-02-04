@@ -15,20 +15,61 @@
     </div>
 
     </header>
+
     <!-- multistep form -->
 <div class="container">
-  <form action="">
+  <form id="page1">
     <h3>CREATE ACCOUNT</h3>
     <input type="email" name="" id="" placeholder="Email" required>
     <input type="password" name="" id="" placeholder="Password" required>
     <input type="password" name="" id="" placeholder="Confirm Password" required>
  
   
-  <div class="btn-bg">
+  <div class="btn-bg"> 
     
-    <button type="button">Next</button>
+    <button type="button" id="next1">Next</button>
   </div>
 </form>
+
+<form id="page2">
+<h3>PERSONAL INFO</h3>
+<input type="text" name="" id="" placeholder="Name" required>
+<input type="text" name="" id="" placeholder="University" required>
+<input type="text" name="" id="" placeholder="Age" required>
+
+
+  <div class="btn-bg">
+    <button type="button" id="prev1">Prev</button>
+    <button type="button" id="next2">Next</button>
+  </div>
+
+</form>
+
+<form id="page3">
+  <h3>Contact</h3>
+  <input type="text" id=""name="" id="" placeholder="phone number" required>
+  <input type="text" name="" id="" placeholder="Github">
+  <input type="url" name="" id="" placeholder="Portfolio" required>
+  
+
+  <div class="btn-bg">
+    <button type="button" id="prev2">Prev</button>
+    <button type="submit">Submit</button>
+
+  </div>
+
+
+
+
+</form>
+
+<div class="step-row">
+  <div id="progress"></div>
+  <div class="step-col"><small>Step1</small></div>
+  <div class="step-col"><small>Step2</small></div>
+  <div class="step-col"><small>Step3</small></div>
+</div>
+
 </div>
 
 <script src="./js/script.js"> type="text/javascript"</script>
