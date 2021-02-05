@@ -17,7 +17,6 @@ html {
 
 header {
   padding-top: 2em;
-  font-size: 2rem;
   text-transform: capitalize;
   font-weight: bold;
   color: #333;
@@ -27,6 +26,10 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+h1 {
+  font-family: 'Sriracha', cursive;
 }
 
 .typewriter h2 {
