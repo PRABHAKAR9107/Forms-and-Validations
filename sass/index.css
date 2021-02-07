@@ -17,6 +17,7 @@ html {
 
 header {
   padding-top: 2em;
+  margin-top: 10px;
   text-transform: capitalize;
   font-weight: bold;
   color: #333;
@@ -87,7 +88,7 @@ h1 {
 .container {
   width: 360px;
   height: 400px;
-  margin: 8% auto;
+  margin: 8px auto;
   background: rgba(255, 255, 255, 0.25);
   -webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
           box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
@@ -207,5 +208,56 @@ form button {
   right: -20px;
   top: 0;
   border-left: 20px solid #f54295;
+}
+
+footer {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  color: #fff;
+}
+
+.icons i {
+  cursor: pointer;
+  margin: 15px 15px;
+  font-size: 50px;
+  padding: 15px;
+  border-radius: 50% 0 50% 0;
+}
+
+.icons:hover {
+  opacity: 1;
+}
+
+.icons i:hover {
+  opacity: 1;
+}
+
+.icons i:hover:nth-child(1) {
+  background: #3b5998;
+  -webkit-box-shadow: 0 3px 30px 0 #3b5998 inset, 0 3px 30px 0 #3b5998 , 0 3px 30px 0 #3b5998 inset, 0 3px 30px 0 #3b5998;
+          box-shadow: 0 3px 30px 0 #3b5998 inset, 0 3px 30px 0 #3b5998 , 0 3px 30px 0 #3b5998 inset, 0 3px 30px 0 #3b5998;
+  text-shadow: 0 0 5px #3b5998, 0 0 5px #3b5998;
+}
+
+.icons i:hover:nth-child(2) {
+  background: #3b5998;
+  -webkit-box-shadow: 0 3px 30px 0 #3b5998 inset, 0 3px 30px 0 #3b5998 , 0 3px 30px 0 #3b5998 inset, 0 3px 30px 0 #3b5998;
+          box-shadow: 0 3px 30px 0 #3b5998 inset, 0 3px 30px 0 #3b5998 , 0 3px 30px 0 #3b5998 inset, 0 3px 30px 0 #3b5998;
+  text-shadow: 0 0 5px #3b5998, 0 0 5px #3b5998;
+}
+
+.icons i:hover:nth-child(3) {
+  background: #3b5998;
+  -webkit-box-shadow: 0 3px 30px 0 #3b5998 inset, 0 3px 30px 0 #3b5998 , 0 3px 30px 0 #3b5998 inset, 0 3px 30px 0 #3b5998;
+          box-shadow: 0 3px 30px 0 #3b5998 inset, 0 3px 30px 0 #3b5998 , 0 3px 30px 0 #3b5998 inset, 0 3px 30px 0 #3b5998;
+  text-shadow: 0 0 5px #3b5998, 0 0 5px #3b5998;
+}
+
+.icons i:hover:nth-child(4) {
+  background: #080808;
+  -webkit-box-shadow: 0 3px 30px 0 #080808 inset, 0 3px 30px 0 #080808, 0 3px 30px 0 #080808 inset, 0 3px 30px 0 #080808;
+          box-shadow: 0 3px 30px 0 #080808 inset, 0 3px 30px 0 #080808, 0 3px 30px 0 #080808 inset, 0 3px 30px 0 #080808;
+  text-shadow: 0 0 5px #080808, 0 0 5px #080808;
 }
 /*# sourceMappingURL=index.css.map */
